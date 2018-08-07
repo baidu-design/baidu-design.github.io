@@ -1,0 +1,212 @@
+/* Theme colors */
+/* Additional colors */
+/* Grayscale colors */
+/* Text colors */
+/* Link colors */
+/* Font settings */
+/* Metrics */
+/* Form widths */
+.veui-input.veui-input-invalid,
+.veui-input.veui-input-invalid:hover,
+.veui-input.veui-input-invalid:focus {
+  border-color: #ff5b5b;
+}
+.veui-input {
+  overflow: hidden;
+  display: inline-table;
+  position: relative;
+  height: 36px;
+  line-height: 34px;
+  width: 210px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  color: #666;
+  transition: border-color 0.3s, color 0.3s;
+}
+.veui-input-autofill {
+  background-color: #faffbd;
+}
+.veui-field > .veui-input {
+  display: inline-table;
+}
+.veui-input-hidden {
+  display: none !important;
+}
+.veui-input-before,
+.veui-input-main,
+.veui-input-clear,
+.veui-input-after {
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
+}
+.veui-input-main {
+  width: 100%;
+}
+.veui-input-input {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  background-color: transparent;
+  text-overflow: ellipsis;
+}
+.veui-input-clear {
+  padding-right: 12px;
+}
+.veui-input-clear-button {
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  vertical-align: calc(-50% + .5em);
+  vertical-align: -3px\9\0;
+  border: none;
+  background-color: transparent;
+  color: #666;
+  outline: none;
+  cursor: unset;
+}
+.veui-input-clear-button.focus-visible {
+  color: #333;
+}
+.veui-input-clear .veui-icon {
+  cursor: pointer;
+  vertical-align: top;
+}
+.veui-input-clear .veui-icon:hover {
+  color: #333;
+}
+.veui-input:hover,
+.veui-input-focused {
+  border-color: #999;
+}
+.veui-input-focused {
+  color: #333;
+}
+.veui-input.veui-readonly,
+.veui-input.veui-disabled {
+  background-color: #f7f7f7;
+}
+.veui-input.veui-readonly,
+.veui-input.veui-disabled,
+.veui-input.veui-readonly:hover,
+.veui-input.veui-disabled:hover {
+  border-color: #dbdbdb;
+  color: #999;
+}
+.veui-input.veui-disabled,
+.veui-input.veui-disabled .veui-input-input {
+  cursor: not-allowed;
+}
+.veui-input-placeholder {
+  position: absolute;
+  padding-left: 10px;
+  color: #999 !important;
+  pointer-events: none;
+  cursor: text;
+}
+.veui-input[ui~="large"] {
+  height: 42px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.veui-input[ui~="small"] {
+  height: 32px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.veui-input[ui~="tiny"] {
+  height: 28px;
+  line-height: 26px;
+  font-size: 12px;
+}
+.veui-input[ui~="micro"] {
+  height: 22px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+
+.veui-prompt-box .veui-prompt-box-info {
+  margin-top: 0;
+}
+.veui-prompt-box .veui-prompt-box-input {
+  width: 100%;
+}
+.veui-prompt-box .veui-dialog-content-foot {
+  padding-top: 40px;
+}
+
+/* Theme colors */
+/* Additional colors */
+/* Grayscale colors */
+/* Text colors */
+/* Link colors */
+/* Font settings */
+/* Metrics */
+/* Form widths */
+.veui-toast {
+  position: absolute;
+  max-width: 500px;
+  max-height: 62px;
+  padding: 10px 30px;
+  background-color: #fff;
+  line-height: 1.5;
+  border-radius: 1px;
+  color: #666;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.veui-toast-message {
+  display: block;
+  margin-left: 36px;
+}
+.veui-toast-icon {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+.veui-toast-success .veui-toast-icon {
+  color: #5bc49f;
+}
+.veui-toast-warning .veui-toast-icon {
+  color: #fe9700;
+}
+.veui-toast-info .veui-toast-icon {
+  color: #3998fc;
+}
+.veui-toast-error .veui-toast-icon {
+  color: #ff5b5b;
+}
+
+/* Theme colors */
+/* Additional colors */
+/* Grayscale colors */
+/* Text colors */
+/* Link colors */
+/* Font settings */
+/* Metrics */
+/* Form widths */
+.veui-toast-list {
+  position: fixed;
+  top: 85px;
+  right: 0;
+  left: 0;
+}
+.veui-toast-list .veui-toast {
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s, top 0.3s, transform 0.3s;
+}
+.veui-toast-list .veui-toast-enter,
+.veui-toast-list .veui-toast-leave-to {
+  opacity: 0;
+}
+.veui-toast-list .veui-toast-enter {
+  transform: translate(-50%, -100%);
+}
+

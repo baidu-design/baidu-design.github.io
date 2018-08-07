@@ -1,0 +1,179 @@
+/* Theme colors */
+/* Additional colors */
+/* Grayscale colors */
+/* Text colors */
+/* Link colors */
+/* Font settings */
+/* Metrics */
+/* Form widths */
+.veui-date-picker-overlay {
+  border: 1px solid #e7e7e7;margin: 3px 0;box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.veui-date-picker .veui-date-picker-button {
+  width: 100%;padding-right: 10px;padding-left: 10px;text-align: left;
+}
+.veui-date-picker-label {
+  display: inline-block;max-width: calc(100% - 24px);width: 100%;overflow: hidden;-o-text-overflow: ellipsis;text-overflow: ellipsis;white-space: nowrap;
+}
+.veui-date-picker-icon {
+  float: right;
+}
+.veui-date-picker-button[ui~="primary"]:not(.veui-button-loading):disabled {
+  background-color: #eee;border-color: transparent;color: #b8b8b8;
+}
+.veui-date-picker-expanded .veui-date-picker-button:not([ui~="link"]),
+.veui-date-picker-expanded .veui-date-picker-button:not([ui~="link"]):hover,
+.veui-date-picker-expanded .veui-date-picker-button:not([ui~="link"]).focus-visible {
+  color: #333;background-color: #f7f7f7;
+}
+.veui-date-picker-expanded .veui-date-picker-button:not([ui~="link"]):active {
+  background-color: #e7e7e7;
+}
+.veui-date-picker-expanded .veui-date-picker-button[ui~="primary"]:not([ui~="link"]),
+.veui-date-picker-expanded .veui-date-picker-button[ui~="primary"]:not([ui~="link"]):hover,
+.veui-date-picker-expanded .veui-date-picker-button[ui~="primary"]:not([ui~="link"]).focus-visible {
+  background-color: #3389e3;color: #fff;
+}
+.veui-date-picker-expanded .veui-date-picker-button[ui~="primary"]:not([ui~="link"]):active {
+  background-color: #2e7aca;
+}
+.veui-date-picker-expanded .veui-date-picker-button[ui~="alt"],
+.veui-date-picker-expanded .veui-date-picker-button[ui~="alt"]:hover,
+.veui-date-picker-expanded .veui-date-picker-button[ui~="alt"].focus-visible {
+  background-color: #e7e7e7;
+}
+.veui-date-picker.veui-input-invalid .veui-button.veui-date-picker-button,
+.veui-date-picker.veui-input-invalid .veui-button.veui-date-picker-button:hover,
+.veui-date-picker.veui-input-invalid .veui-button.veui-date-picker-button:focus {
+  border-color: #ff5b5b;
+}
+.veui-date-picker {
+  position: relative;
+  display: inline-block;
+  width: 210px;
+}
+.veui-date-picker-empty .veui-button {
+  color: #999;
+}
+.veui-date-picker-empty .veui-button.focus-visible {
+  color: #3998fc;
+}
+.veui-date-picker-empty .veui-button.veui-disabled {
+  color: #b8b8b8;
+}
+.veui-date-picker-empty .veui-date-picker-tilde,
+.veui-date-picker-empty .veui-date-picker-label ~ .veui-date-picker-label {
+  display: none;
+}
+.veui-date-picker-clear {
+  position: absolute;
+  top: calc(50% - .5em - 1px);
+  right: 10px;
+  width: calc(1em + 2px);
+  height: calc(1em + 2px);
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 0;
+  color: #999;
+  cursor: pointer;
+  transition-property: border-color, background-color, color, opacity;
+  transition-duration: 0.2s;
+}
+.veui-date-picker:hover .veui-date-picker-clear,
+.veui-date-picker-clear.focus-visible {
+  width: calc(1em + 2px);
+  height: calc(1em + 2px);
+  clip: auto;
+}
+.veui-date-picker-clear:hover {
+  color: #666;
+}
+.veui-date-picker-clear.focus-visible {
+  color: #3998fc;
+}
+.veui-date-picker-clear .veui-icon {
+  display: block;
+}
+.veui-date-picker-range .veui-date-picker-label {
+  width: auto;
+}
+.veui-date-picker-tilde {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 3px;
+}
+.veui-date-picker-shortcuts {
+  height: 41px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.veui-calendar-panel + .veui-date-picker-shortcuts {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: none;
+}
+.veui-date-picker-shortcut {
+  transition-property: border-color, background-color, color, opacity;
+  transition-duration: 0.2s;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 10px;
+  padding: 0 10px;
+  border: none;
+  background: none;
+  font-size: 12px;
+  color: #666;
+  outline: none;
+}
+.veui-date-picker-shortcut:hover {
+  background-color: #e7e7e7;
+}
+.veui-date-picker-shortcut.focus-visible {
+  color: #3998fc;
+}
+.veui-date-picker-shortcut:active {
+  background-color: #dbdbdb;
+}
+.veui-date-picker-shortcut:last-child {
+  margin-right: 0;
+}
+.veui-date-picker-shortcut-selected {
+  background-color: #eee;
+  color: #333;
+}
+.veui-date-picker:hover .veui-date-picker-clear {
+  display: block;
+}
+.veui-date-picker:hover .veui-date-picker-button:not(.veui-disabled),
+.veui-date-picker:hover .veui-date-picker-clear {
+  background-color: #f7f7f7;
+  color: #333;
+}
+.veui-date-picker:hover .veui-date-picker-button:not(.veui-disabled):active,
+.veui-date-picker:hover .veui-date-picker-button:not(.veui-disabled):active + .veui-date-picker-clear {
+  background-color: #e7e7e7;
+}
+.veui-date-picker[ui~="alt"] .veui-date-picker-clear {
+  background-color: #eee;
+}
+.veui-date-picker[ui~="alt"]:hover .veui-date-picker-button:not(.veui-disabled),
+.veui-date-picker[ui~="alt"]:hover .veui-date-picker-clear {
+  background-color: #e7e7e7;
+}
+.veui-date-picker[ui~="alt"]:hover .veui-date-picker-button:not(.veui-disabled):active,
+.veui-date-picker[ui~="alt"]:hover .veui-date-picker-button:not(.veui-disabled):active + .veui-date-picker-clear {
+  background-color: #dbdbdb;
+}
+.veui-date-picker[ui~="large"] {
+  width: 232px;
+}
+.veui-date-picker[ui~="large"] .veui-date-picker-clear {
+  font-size: 16px;
+}
+.veui-date-picker[ui~="tiny"] .veui-date-picker-clear {
+  font-size: 12px;
+}
+.veui-date-picker[ui~="micro"] .veui-date-picker-clear {
+  font-size: 12px;
+}
+

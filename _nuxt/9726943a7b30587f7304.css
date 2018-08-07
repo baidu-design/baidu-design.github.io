@@ -1,0 +1,233 @@
+/* Theme colors */
+/* Additional colors */
+/* Grayscale colors */
+/* Text colors */
+/* Link colors */
+/* Font settings */
+/* Metrics */
+/* Form widths */
+.veui-input.veui-input-invalid,
+.veui-input.veui-input-invalid:hover,
+.veui-input.veui-input-invalid:focus {
+  border-color: #ff5b5b;
+}
+.veui-input {
+  overflow: hidden;
+  display: inline-table;
+  position: relative;
+  height: 36px;
+  line-height: 34px;
+  width: 210px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  color: #666;
+  transition: border-color 0.3s, color 0.3s;
+}
+.veui-input-autofill {
+  background-color: #faffbd;
+}
+.veui-field > .veui-input {
+  display: inline-table;
+}
+.veui-input-hidden {
+  display: none !important;
+}
+.veui-input-before,
+.veui-input-main,
+.veui-input-clear,
+.veui-input-after {
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
+}
+.veui-input-main {
+  width: 100%;
+}
+.veui-input-input {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  background-color: transparent;
+  text-overflow: ellipsis;
+}
+.veui-input-clear {
+  padding-right: 12px;
+}
+.veui-input-clear-button {
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  vertical-align: calc(-50% + .5em);
+  vertical-align: -3px\9\0;
+  border: none;
+  background-color: transparent;
+  color: #666;
+  outline: none;
+  cursor: unset;
+}
+.veui-input-clear-button.focus-visible {
+  color: #333;
+}
+.veui-input-clear .veui-icon {
+  cursor: pointer;
+  vertical-align: top;
+}
+.veui-input-clear .veui-icon:hover {
+  color: #333;
+}
+.veui-input:hover,
+.veui-input-focused {
+  border-color: #999;
+}
+.veui-input-focused {
+  color: #333;
+}
+.veui-input.veui-readonly,
+.veui-input.veui-disabled {
+  background-color: #f7f7f7;
+}
+.veui-input.veui-readonly,
+.veui-input.veui-disabled,
+.veui-input.veui-readonly:hover,
+.veui-input.veui-disabled:hover {
+  border-color: #dbdbdb;
+  color: #999;
+}
+.veui-input.veui-disabled,
+.veui-input.veui-disabled .veui-input-input {
+  cursor: not-allowed;
+}
+.veui-input-placeholder {
+  position: absolute;
+  padding-left: 10px;
+  color: #999 !important;
+  pointer-events: none;
+  cursor: text;
+}
+.veui-input[ui~="large"] {
+  height: 42px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.veui-input[ui~="small"] {
+  height: 32px;
+  line-height: 30px;
+  font-size: 12px;
+}
+.veui-input[ui~="tiny"] {
+  height: 28px;
+  line-height: 26px;
+  font-size: 12px;
+}
+.veui-input[ui~="micro"] {
+  height: 22px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+/* Theme colors */
+/* Additional colors */
+/* Grayscale colors */
+/* Text colors */
+/* Link colors */
+/* Font settings */
+/* Metrics */
+/* Form widths */
+.veui-checkbox {
+  position: relative;
+  display: inline-block;
+  color: #666;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+.veui-checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+.veui-checkbox-label,
+.veui-checkbox-box {
+  vertical-align: top;
+  display: inline-block;
+  transition: color 0.3s;
+}
+.veui-field > .veui-checkbox {
+  line-height: 36px;
+}
+.veui-field > .veui-checkbox .veui-checkbox-box {
+  vertical-align: text-top;
+}
+.veui-checkbox .focus-visible ~ .veui-checkbox-box,
+.veui-checkbox .focus-visible ~ .veui-checkbox-label,
+.veui-checkbox:hover {
+  color: #333;
+}
+.veui-checkbox .focus-visible ~ .veui-checkbox-box {
+  box-shadow: 0 0 0 2px #dbdbdb;
+}
+.veui-checkbox-box {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+  border: 1px solid #666;
+  background-color: #fff;
+  font-size: 16px;
+  transition: box-shadow 0.3s;
+}
+.veui-checkbox-box .veui-icon {
+  color: #333;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s, opacity 0.3s;
+}
+.veui-checkbox-icon-enter,
+.veui-checkbox-icon-leave-to {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+.veui-checkbox:hover .veui-checkbox-box {
+  border-color: #333;
+}
+.veui-checkbox :checked + .veui-checkbox-box,
+.veui-checkbox :indeterminate + .veui-checkbox-box {
+  border-color: #333;
+}
+.veui-checkbox.veui-disabled {
+  cursor: not-allowed;
+}
+.veui-checkbox.veui-disabled .veui-checkbox-label {
+  color: #999;
+}
+.veui-checkbox.veui-disabled .veui-checkbox-box {
+  border-color: #dbdbdb;
+  background-color: #eee;
+}
+.veui-checkbox.veui-disabled .veui-checkbox-box .veui-icon {
+  color: #dbdbdb;
+}
+.veui-checkbox[ui~="small"] {
+  font-size: 12px;
+  line-height: 12px;
+}
+.veui-field[ui~="small"] > .veui-checkbox[ui~="small"] {
+  line-height: 32px;
+}
+.veui-field[ui~="small"] > .veui-checkbox[ui~="small"] .veui-checkbox-box {
+  vertical-align: -2px;
+}
+.veui-checkbox[ui~="small"] .veui-checkbox-box {
+  margin-right: 6px;
+  height: 12px;
+  width: 12px;
+  font-size: 12px;
+}
+

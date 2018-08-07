@@ -1,0 +1,75 @@
+
+.one-details[data-v-1bf0130e] {
+  overflow: hidden;
+}
+.summary[data-v-1bf0130e] {
+  border: none;
+  background: none;
+  padding-left: 0;
+  cursor: help;
+  outline: none;
+}
+.summary[data-v-1bf0130e]:hover {
+  color: #333;
+}
+.content[data-v-1bf0130e] {
+  overflow: hidden;
+  transition: height 0.3s;
+}
+.arrow[data-v-1bf0130e] {
+  vertical-align: top;
+  margin-top: 0.35em;
+  transition: transform 0.3s;
+}
+.expanded > .summary > .arrow[data-v-1bf0130e] {
+  transform: rotateZ(90deg);
+}
+
+
+.one-demo[data-v-60514566] {
+  overflow: hidden;
+}
+.arrow[data-v-60514566] {
+  transition: transform 0.3s;
+  vertical-align: -2px;
+  transform: rotateZ(90deg);
+}
+.one-demo.expanded .arrow[data-v-60514566] {
+  transform: rotateZ(270deg);
+}
+.demo[data-v-60514566] {
+  border: 1px solid #eee;
+  padding: 30px;
+}
+.desc[data-v-60514566] {
+  border: 1px solid #eee;
+  padding: 18px 20px;
+  background-color: #fcfcfc;
+}
+.source[data-v-60514566] {
+  transition: height 0.3s;
+}
+.source[data-v-60514566] pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.desc[data-v-60514566],
+.source[data-v-60514566] pre,
+.toggle[data-v-60514566] {
+  margin-top: -1px;
+}
+.toggle[data-v-60514566] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  outline: none;
+}
+.toggle[data-v-60514566]:hover,
+.toggle.focus-visible[data-v-60514566] {
+  background-color: #fafafa;
+}
+

@@ -1,93 +1,28 @@
 /*! tether 1.4.4 */
 
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
 /*!
- * bytes
- * Copyright(c) 2012-2014 TJ Holowaychuk
- * Copyright(c) 2015 Jed Watson
- * MIT Licensed
+ * Vue.js v2.5.17
+ * (c) 2014-2018 Evan You
+ * Released under the MIT License.
  */
 
-/*! tether 1.4.4 */
+/**
+  * vue-router v3.0.1
+  * (c) 2017 Evan You
+  * @license MIT
+  */
 
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
-
-/*! tether 1.4.4 */
+/**
+ * vue-meta v1.5.2
+ * (c) 2018 Declan de Wet & Atinux
+ * @license MIT
+ */
 
 /*
 object-assign
 (c) Sindre Sorhus
 @license MIT
 */
-
-/*!
- * Vue.js v2.5.16
- * (c) 2014-2018 Evan You
- * Released under the MIT License.
- */
 
 /*!
  * @overview es6-promise - a tiny implementation of Promises/A+.
@@ -97,10 +32,17 @@ object-assign
  * @version   v4.2.4+314e4831
  */
 
-/**
- * vue-meta v1.5.2
- * (c) 2018 Declan de Wet & Atinux
- * @license MIT
+/*!
+ * vue-no-ssr v0.2.2
+ * (c) 2017-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*!
+ * bytes
+ * Copyright(c) 2012-2014 TJ Holowaychuk
+ * Copyright(c) 2015 Jed Watson
+ * MIT Licensed
  */
 
 /*

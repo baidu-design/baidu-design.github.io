@@ -1,0 +1,239 @@
+/* Theme colors */
+/* Additional colors */
+/* Grayscale colors */
+/* Text colors */
+/* Link colors */
+/* Font settings */
+/* Metrics */
+/* Form widths */
+.veui-tooltip {
+  position: relative;
+  padding: 7.5px 10px;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  line-height: 1.5;
+  border-radius: 1px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.veui-tooltip-box-transparent {
+  pointer-events: none;
+}
+.veui-tooltip::before,
+.veui-tooltip::after {
+  content: "";
+  color: rgba(51, 51, 51, 0.8);
+  transform-origin: 50% 100%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-bottom-color: currentColor;
+  margin-left: -4px;
+  margin-top: -8px;
+}
+.veui-tooltip::before {
+  display: none;
+}
+.tether-element-attached-top.tether-target-attached-bottom .veui-tooltip {
+  margin-top: 8px;
+}
+.tether-element-attached-top.tether-target-attached-bottom .veui-tooltip::before,
+.tether-element-attached-top.tether-target-attached-bottom .veui-tooltip::after {
+  top: 0;
+}
+.tether-element-attached-top.tether-target-attached-bottom .veui-tooltip::before {
+  transform: scale(1.3);
+}
+.tether-element-attached-right.tether-target-attached-left .veui-tooltip {
+  margin-right: 8px;
+}
+.tether-element-attached-right.tether-target-attached-left .veui-tooltip::before,
+.tether-element-attached-right.tether-target-attached-left .veui-tooltip::after {
+  right: -4px;
+  left: auto;
+  transform: scale(1.1) rotate(90deg);
+}
+.tether-element-attached-right.tether-target-attached-left .veui-tooltip::before {
+  transform: scale(1.3) rotate(90deg);
+}
+.tether-element-attached-bottom.tether-target-attached-top .veui-tooltip {
+  margin-bottom: 8px;
+}
+.tether-element-attached-bottom.tether-target-attached-top .veui-tooltip::before,
+.tether-element-attached-bottom.tether-target-attached-top .veui-tooltip::after {
+  bottom: 0;
+  top: auto;
+  transform: scale(1.1) rotate(180deg);
+}
+.tether-element-attached-bottom.tether-target-attached-top .veui-tooltip::before {
+  transform: scale(1.3) rotate(180deg);
+}
+.tether-element-attached-left.tether-target-attached-right .veui-tooltip {
+  margin-left: 8px;
+}
+.tether-element-attached-left.tether-target-attached-right .veui-tooltip::before,
+.tether-element-attached-left.tether-target-attached-right .veui-tooltip::after {
+  left: 0;
+  transform: scale(1.1) rotate(270deg);
+}
+.tether-element-attached-left.tether-target-attached-right .veui-tooltip::before {
+  transform: scale(1.3) rotate(270deg);
+}
+.tether-element-attached-top.tether-target-attached-top .veui-tooltip::before,
+.tether-element-attached-top.tether-target-attached-top .veui-tooltip::after {
+  top: 14px;
+}
+.tether-element-attached-right.tether-target-attached-right .veui-tooltip::before,
+.tether-element-attached-right.tether-target-attached-right .veui-tooltip::after {
+  right: 14px;
+  left: auto;
+}
+.tether-element-attached-bottom.tether-target-attached-bottom .veui-tooltip::before,
+.tether-element-attached-bottom.tether-target-attached-bottom .veui-tooltip::after {
+  top: auto;
+  bottom: 14px;
+}
+.tether-element-attached-left.tether-target-attached-left .veui-tooltip::before,
+.tether-element-attached-left.tether-target-attached-left .veui-tooltip::after {
+  left: 14px;
+}
+.veui-tooltip[ui~="alt"] {
+  background-color: #fff;
+  color: #666;
+}
+.veui-tooltip[ui~="alt"]::before {
+  display: block;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+.veui-tooltip[ui~="alt"]::after {
+  color: #fff;
+}
+.veui-tooltip[ui~="small"] {
+  font-size: 12px;
+}
+.veui-tooltip[ui~="large"] {
+  font-size: 16px;
+}
+
+/* Theme colors */
+/* Additional colors */
+/* Grayscale colors */
+/* Text colors */
+/* Link colors */
+/* Font settings */
+/* Metrics */
+/* Form widths */
+.veui-slider {
+  width: 100%;
+  min-width: 210px;
+  position: relative;
+  user-select: none;
+  overflow: visible;
+}
+.veui-slider-track-default-wrapper {
+  position: relative;
+}
+.veui-slider-track-default-bg,
+.veui-slider-track-default-sp,
+.veui-slider-track-default-fg {
+  height: 4px;
+  border-radius: 2px;
+}
+.veui-slider-track-default-bg {
+  background-color: #dbdbdb;
+}
+.veui-slider-track-default-sp,
+.veui-slider-track-default-fg {
+  position: absolute;
+  top: 0;
+}
+.veui-slider-track-default-sp {
+  background-color: #c4e0fe;
+}
+.veui-slider-track-default-fg {
+  background-color: #3998fc;
+}
+.veui-slider-track-default-marks {
+  width: 100%;
+  position: absolute;
+  top: -3px;
+}
+.veui-slider-track-default-marks div {
+  height: 10px;
+  border-left: 1px solid #dbdbdb;
+  position: absolute;
+}
+.veui-slider-thumb {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.veui-slider-thumb:focus {
+  outline: none;
+}
+.veui-slider-thumb.focus-visible .veui-slider-thumb-default {
+  border-color: #2e7aca;
+}
+.veui-slider-thumb-default {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #3998fc;
+  border-radius: 100%;
+  background-color: #fff;
+}
+.veui-slider .veui-slider-track-default {
+  height: 36px;
+  padding-top: 16px;
+}
+.veui-slider .veui-slider-thumb {
+  top: 11px;
+}
+.veui-slider[ui~="large"] .veui-slider-track-default {
+  height: 42px;
+  padding-top: 19px;
+}
+.veui-slider[ui~="large"] .veui-slider-thumb {
+  top: 14px;
+}
+.veui-slider[ui~="small"] .veui-slider-track-default {
+  height: 32px;
+  padding-top: 14px;
+}
+.veui-slider[ui~="small"] .veui-slider-thumb {
+  top: 9px;
+}
+.veui-slider[ui~="tiny"] .veui-slider-track-default {
+  height: 28px;
+  padding-top: 12px;
+}
+.veui-slider[ui~="tiny"] .veui-slider-thumb {
+  top: 7px;
+}
+.veui-slider[ui~="micro"] .veui-slider-track-default {
+  height: 22px;
+  padding-top: 9px;
+}
+.veui-slider[ui~="micro"] .veui-slider-thumb {
+  top: 4px;
+}
+.veui-slider.veui-disabled .veui-slider-track-default-bg,
+.veui-slider.veui-readonly .veui-slider-track-default-bg {
+  background-color: #e7e7e7;
+}
+.veui-slider.veui-disabled .veui-slider-track-default-fg,
+.veui-slider.veui-readonly .veui-slider-track-default-fg {
+  background-color: #b8b8b8;
+}
+.veui-slider.veui-disabled .veui-slider-track-default-marks div,
+.veui-slider.veui-readonly .veui-slider-track-default-marks div {
+  border-color: #e7e7e7;
+}
+.veui-slider.veui-disabled .veui-slider-thumb-default,
+.veui-slider.veui-readonly .veui-slider-thumb-default {
+  border-color: #b8b8b8;
+}
+

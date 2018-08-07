@@ -1,0 +1,183 @@
+/* Theme colors */
+/* Additional colors */
+/* Grayscale colors */
+/* Text colors */
+/* Link colors */
+/* Font settings */
+/* Metrics */
+/* Form widths */
+.veui-button {
+  padding: 0 20px;
+  user-select: none;
+  vertical-align: middle;
+  transition-property: border-color, background-color, color, opacity;
+  transition-duration: 0.2s;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  color: #666;
+  height: 36px;
+  line-height: 34px;
+}
+.veui-button:hover,
+.veui-button:active {
+  color: #333;
+}
+.veui-button:hover {
+  background-color: #f7f7f7;
+}
+.veui-button:active {
+  background-color: #e7e7e7;
+}
+.veui-button:focus {
+  outline: none;
+}
+.veui-button.focus-visible {
+  color: #3998fc;
+}
+.veui-button[ui~="primary"] {
+  border-color: transparent;
+  background-color: #3998fc;
+  color: #fff;
+}
+.veui-button[ui~="primary"]:hover,
+.veui-button[ui~="primary"].focus-visible {
+  background-color: #3389e3;
+}
+.veui-button[ui~="primary"]:active {
+  background-color: #2e7aca;
+}
+.veui-button[ui~="alt"] {
+  border-color: transparent;
+  background-color: #eee;
+}
+.veui-button[ui~="alt"]:hover {
+  background-color: #e7e7e7;
+}
+.veui-button[ui~="alt"]:active {
+  background-color: #dbdbdb;
+}
+.veui-button[ui~="alt"].focus-visible {
+  color: #3998fc;
+}
+.veui-button[ui~="large"] {
+  line-height: 42px;
+  font-size: 16px;
+  height: 42px;
+  line-height: 40px;
+}
+.veui-button[ui~="large"] > .veui-icon {
+  vertical-align: top;
+  margin-top: calc(20px - 0.5em);
+}
+.veui-button[ui~="small"] {
+  line-height: 32px;
+  font-size: 12px;
+  height: 32px;
+  line-height: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.veui-button[ui~="small"] > .veui-icon {
+  vertical-align: top;
+  margin-top: calc(15px - 0.5em);
+}
+.veui-button[ui~="tiny"] {
+  line-height: 28px;
+  font-size: 12px;
+  height: 28px;
+  line-height: 26px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.veui-button[ui~="tiny"] > .veui-icon {
+  vertical-align: top;
+  margin-top: calc(13px - 0.5em);
+}
+.veui-button[ui~="micro"] {
+  min-width: auto;
+  line-height: 22px;
+  height: 22px;
+  line-height: 20px;
+  font-size: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.veui-button[ui~="micro"] > .veui-icon {
+  vertical-align: top;
+  margin-top: calc(10px - 0.5em);
+}
+.veui-button[ui~="round"] {
+  border-radius: 50%;
+}
+.veui-button[ui~="round"],
+.veui-button[ui~="square"] {
+  width: 36px;
+  min-width: auto;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+}
+.veui-button[ui~="round"][ui~="large"],
+.veui-button[ui~="square"][ui~="large"] {
+  width: 42px;
+}
+.veui-button[ui~="round"][ui~="small"],
+.veui-button[ui~="square"][ui~="small"] {
+  width: 32px;
+}
+.veui-button[ui~="round"][ui~="tiny"],
+.veui-button[ui~="square"][ui~="tiny"] {
+  width: 28px;
+}
+.veui-button[ui~="round"][ui~="micro"],
+.veui-button[ui~="square"][ui~="micro"] {
+  width: 22px;
+}
+.veui-button.veui-disabled,
+.veui-button.veui-disabled[ui],
+.veui-button.veui-disabled:hover,
+.veui-button.veui-disabled[ui]:hover {
+  cursor: not-allowed;
+  border-color: transparent;
+  background-color: #eee;
+  color: #b8b8b8;
+}
+.veui-button[ui~="link"] {
+  display: inline;
+  min-width: auto;
+  border: none;
+  padding: 0;
+}
+.veui-button[ui~="link"],
+.veui-button[ui~="link"]:hover,
+.veui-button[ui~="link"]:active,
+.veui-button[ui~="link"].focus-visible {
+  background-color: transparent;
+}
+.veui-button[ui~="link"].veui-disabled,
+.veui-button[ui~="link"].veui-disabled:hover {
+  background-color: transparent;
+}
+.veui-button-loading,
+.veui-button-loading[ui] {
+  cursor: default;
+  pointer-events: none;
+}
+.veui-button .veui-icon {
+  max-width: 1em;
+}
+.veui-button .veui-icon + .veui-button-loading-text {
+  margin-left: 5px;
+}
+.veui-button > .veui-icon {
+  vertical-align: top;
+  margin-top: calc(17px - 0.5em);
+}
+.veui-button-loading-text {
+  vertical-align: top;
+}
+[ui~="round"] > .veui-button-loading-text,
+[ui~="square"] > .veui-button-loading-text {
+  display: none;
+}
+
