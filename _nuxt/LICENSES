@@ -44,9 +44,3 @@ object-assign
  * Copyright(c) 2015 Jed Watson
  * MIT Licensed
  */
-
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/
