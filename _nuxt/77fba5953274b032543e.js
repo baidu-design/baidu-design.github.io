@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[82],{1404:function(e,n,t){"use strict";t.r(n);var o={render:function(e){return e()},created:function(){this.$router.replace("/development/veui")}},r=t(1),u=Object(r.a)(o,void 0,void 0,!1,null,null,null);n.default=u.exports}}]);
