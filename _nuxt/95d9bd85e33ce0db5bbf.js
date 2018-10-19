@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[64],{1422:function(t,e,n){"use strict";n.r(e);var i=function(){var t=this.$createElement;return(this._self._c||t)("div",[this._v("\n  tab view2\n")])};i._withStripped=!0;var s={},a=n(1),l=Object(a.a)(s,i,[],!1,null,null,null);l.options.__file="tab2.vue";e.default=l.exports}}]);
