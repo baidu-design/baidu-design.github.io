@@ -1,0 +1,170 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[22],{
+
+/***/ 1454:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/veui-loader/lib??ref--14!./pages/advanced/overlay.vue?vue&type=template&id=2862205c&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"content post"},[_c('h1',{attrs:{"id":"浮层管理"}},[_vm._v("浮层管理")]),_c('p',[_vm._v("在 VEUI 中，有大量组件使用到了浮层功能：")]),_c('ul',[_c('li',[_vm._v("各种类型的弹框："),_c('a',{attrs:{"href":"../components/dialog"}},[_vm._v("对话框")]),_vm._v("、"),_c('a',{attrs:{"href":"../components/alert-box"}},[_vm._v("警告弹框")]),_vm._v("等；")]),_c('li',[_c('a',{attrs:{"href":"../components/select"}},[_vm._v("下拉选择")]),_vm._v("；")]),_c('li',[_vm._v("……")])]),_c('p',[_vm._v("针对这些组件，我们抽离了具备如下功能的浮层模块：")]),_c('ul',[_c('li',[_vm._v("能够浮于页面上所有普通元素之上；")]),_c('li',[_vm._v("能够进行层叠顺序管理；")]),_c('li',[_vm._v("能够基于指定元素定位。")])]),_c('h2',{attrs:{"id":"层叠覆盖"}},[_vm._v("层叠覆盖")]),_c('p',[_vm._v("为了避免浮层被上层 "),_c('code',[_vm._v("overflow: hidden")]),_vm._v(" 的元素意外遮盖，我们将浮层根元素直接置于 "),_c('code',[_vm._v("<body>")]),_vm._v(" 下统一管理。")]),_c('p',[_vm._v("在"),_c('a',{attrs:{"href":"../components/overlay"}},[_vm._v("浮层组件")]),_vm._v("中，"),_c('code',[_vm._v(".veui-overlay-box")]),_vm._v(" 对应了浮层根元素，该元素在组件初始化的时候，会被放置到 "),_c('code',[_vm._v("<body>")]),_vm._v(" 之下，组件销毁的时候，会被移除掉。")]),_c('h2',{attrs:{"id":"层叠顺序管理"}},[_vm._v("层叠顺序管理")]),_c('p',[_vm._v("在将浮层根元素置于 "),_c('code',[_vm._v("<body>")]),_vm._v(" 下后，原有的层级嵌套关系会丢失，同时也无法通过原生的层叠上下文机制来控制浮层的层叠顺序。比如：")]),_c('ul',[_c('li',[_vm._v("某个对话框组件 A 上有一个下拉选择组件 B，那么 B 组件浮层应该位于 A 组件浮层之上。")]),_c('li',[_vm._v("警告框浮层应该位于普通对话框浮层之上。")])]),_c('p',[_vm._v("基于上述限制，浮层模块实现了自己的层叠顺序管理机制。整个浮层层级嵌套关系，是通过一棵树来表达的：")]),_c('figure',{staticClass:"hero"},[_c('div',{staticClass:"preview"},[_c('img',{staticClass:"hero",attrs:{"src":"/images/development/advanced/overlay-tree.png","srcset":"/images/development/advanced/overlay-tree.png" + " 2x"}})])]),_c('p',[_vm._v("树中每一个蓝色节点都对应关联到具体的"),_c('a',{attrs:{"href":"../componnets/overlay"}},[_vm._v("浮层组件")]),_vm._v("实例。针对上图，树的构造顺序可以是：")]),_c('ol',[_c('li',[_vm._v("弹出“对话框1”，创建一个“对话框1”节点，根据节点权重信息创建一个分组，然后将分组挂在 root 节点之下。")]),_c('li',[_vm._v("弹出“对话框2”，创建一个“对话框2”节点，发现已经存在相同权重的分组，就直接将“对话框2”节点放置在该分组的末尾位置。")]),_c('li',[_vm._v("在“对话框2”中实例化一个“下拉选择1”组件实例，由于“对话框2”组件实例是“下拉选择1”组件实例的父级，因此对应的浮层节点也应当具备父子关系，因此按照类似于“步骤1”的顺序在“对话框2”节点下生成分组及“下拉选择1”节点。")]),_c('li',[_vm._v("此时由于程序运行出现了故障，弹出了“警告弹框1”，由于“警告弹框”类型的组件相对于“对话框”组件具备更高的层级权重，因此在 root 之下新建了一个靠右的分组，并将生成的“警告弹框1”节点置于分组末尾。")])]),_c('p',[_vm._v("有了树之后，就会按照深度优先的遍历顺序生成每个节点的 "),_c('code',[_vm._v("z-index")]),_vm._v(" 值。")]),_c('p',[_vm._v("其中，基准 "),_c('code',[_vm._v("z-index")]),_vm._v(" 值可以通过全局配置对象进行配置：")]),_c('pre',[_c('code',{staticClass:"hljs language-js"},[_c('span',{staticClass:"hljs-keyword"},[_vm._v("import")]),_vm._v(" config "),_c('span',{staticClass:"hljs-keyword"},[_vm._v("from")]),_vm._v(" "),_c('span',{staticClass:"hljs-string"},[_vm._v("'veui/managers/config'")]),_vm._v("\n\nconfig.set("),_c('span',{staticClass:"hljs-string"},[_vm._v("'overlay.baseZIndex'")]),_vm._v(", "),_c('span',{staticClass:"hljs-number"},[_vm._v("200")]),_vm._v(")")])]),_c('div',{staticClass:"warning custom-block"},[_c('p',[_vm._v("必须在"),_c('a',{attrs:{"href":"../components/overlay"}},[_vm._v("浮层组件")]),_vm._v("引入之前设置基准 "),_c('code',[_vm._v("z-index")]),_vm._v("，不然不会生效。")])]),_c('p',[_vm._v("可以针对组件类型，甚至组件实例粒度设置层叠优先级，层叠优先级值越大，最终生成的 "),_c('code',[_vm._v("z-index")]),_vm._v(" 值就越大。具有相同层叠优先级的同级组件实例，越靠后实例化的组件，生成的 "),_c('code',[_vm._v("z-index")]),_vm._v(" 值越大。")]),_c('p',[_vm._v("浮层组件、对话框组件、弹框组件等提供了 "),_c('code',[_vm._v("priority")]),_vm._v(" 属性，用于自定义组件实例的层叠优先级：")]),_c('pre',[_c('code',{staticClass:"hljs language-html"},[_c('span',{staticClass:"hljs-tag"},[_vm._v("<"),_c('span',{staticClass:"hljs-name"},[_vm._v("veui-dialog")]),_vm._v(" "),_c('span',{staticClass:"hljs-attr"},[_vm._v(":priority")]),_vm._v("="),_c('span',{staticClass:"hljs-string"},[_vm._v("\"300\"")]),_vm._v("/>")])])]),_c('p',[_vm._v("一些比较特殊的组件，会提供基于组件类型粒度的层叠优先级配置：")]),_c('table',[_c('thead',[_c('tr',[_c('th',[_vm._v("组件")]),_c('th',[_vm._v("配置字段")]),_c('th',[_vm._v("默认值")]),_c('th',[_vm._v("修改配置示例")])])]),_c('tbody',[_c('tr',[_c('td',[_vm._v("警告弹框")]),_c('td',[_c('code',[_vm._v("alertbox.priority")])]),_c('td',[_c('code',[_vm._v("100")])]),_c('td',[_c('pre',[_c('code',{staticClass:"hljs language-js"},[_c('span',{staticClass:"hljs-keyword"},[_vm._v("import")]),_vm._v(" config "),_c('span',{staticClass:"hljs-keyword"},[_vm._v("from")]),_vm._v(" "),_c('span',{staticClass:"hljs-string"},[_vm._v("'veui/managers/config'")]),_vm._v("\n\nconfig.set("),_c('span',{staticClass:"hljs-string"},[_vm._v("'alertbox.priority'")]),_vm._v(", "),_c('span',{staticClass:"hljs-number"},[_vm._v("100")]),_vm._v(")")])])])]),_c('tr',[_c('td',[_vm._v("确认弹框")]),_c('td',[_c('code',[_vm._v("confirmbox.priority")])]),_c('td',[_c('code',[_vm._v("100")])]),_c('td',[_c('pre',[_c('code',{staticClass:"hljs language-js"},[_c('span',{staticClass:"hljs-keyword"},[_vm._v("import")]),_vm._v(" config "),_c('span',{staticClass:"hljs-keyword"},[_vm._v("from")]),_vm._v(" "),_c('span',{staticClass:"hljs-string"},[_vm._v("'veui/managers/config'")]),_vm._v("\n\nconfig.set("),_c('span',{staticClass:"hljs-string"},[_vm._v("'confirmbox.priority'")]),_vm._v(", "),_c('span',{staticClass:"hljs-number"},[_vm._v("100")]),_vm._v(")")])])])]),_c('tr',[_c('td',[_vm._v("输入弹框")]),_c('td',[_c('code',[_vm._v("promptbox.priority")])]),_c('td',[_c('code',[_vm._v("100")])]),_c('td',[_c('pre',[_c('code',{staticClass:"hljs language-js"},[_c('span',{staticClass:"hljs-keyword"},[_vm._v("import")]),_vm._v(" config "),_c('span',{staticClass:"hljs-keyword"},[_vm._v("from")]),_vm._v(" "),_c('span',{staticClass:"hljs-string"},[_vm._v("'veui/managers/config'")]),_vm._v("\n\nconfig.set("),_c('span',{staticClass:"hljs-string"},[_vm._v("'promptbox.priority'")]),_vm._v(", "),_c('span',{staticClass:"hljs-number"},[_vm._v("100")]),_vm._v(")")])])])])])]),_c('p',[_vm._v("总结起来，确定某个浮层系组件实例的层叠优先级的逻辑流程为：")]),_c('ul',[_c('li',[_vm._v("如果能够设置组件实例级别的层叠优先级，并且设置了，那么就使用这个层叠优先级值，否则进入下一步；")]),_c('li',[_vm._v("如果能够设置组件类型级别的层叠优先级，并且设置了，那么就使用这个层叠优先级值，否则进入下一步；")]),_c('li',[_vm._v("使用默认的层叠优先级值："),_c('code',[_vm._v("1")]),_vm._v("。")])]),_c('h2',{attrs:{"id":"定位"}},[_vm._v("定位")]),_c('p',[_vm._v("VEUI 中，浮层支持两种定位方式：")]),_c('ul',[_c('li',[_vm._v("在页面范围内，以坐标值的形式进行定位；")]),_c('li',[_vm._v("相对于某个元素，指定偏移和变换规则进行定位。")])]),_c('p',[_vm._v("以坐标方式定位时，需要自己写 CSS 进行控制（浮层模块内部只会生成浮层根元素的 "),_c('code',[_vm._v("z-index")]),_vm._v(" 值）。")]),_c('p',[_vm._v("相对元素定位时，可以通过"),_c('a',{attrs:{"href":"../components/overlay"}},[_vm._v("浮层组件")]),_vm._v("的 "),_c('code',[_vm._v("options")]),_vm._v(" 属性描述偏移和变换规则。由于目前内部采用 "),_c('a',{attrs:{"href":"http://tether.io/"}},[_vm._v("Tether")]),_vm._v(" 实现，因此完整的配置项可以参考 "),_c('a',{attrs:{"href":"http://tether.io/#options"}},[_vm._v("Tether 官网")]),_vm._v("。同时，也支持一些常见场景的简化配置："),_c('code',[_vm._v("{ position: `${side}-${align}` }")]),_vm._v("，"),_c('code',[_vm._v("side")]),_vm._v(" 表示浮层根元素位于目标元素哪一边（"),_c('code',[_vm._v("top")]),_vm._v("/"),_c('code',[_vm._v("right")]),_vm._v("/"),_c('code',[_vm._v("bottom")]),_vm._v("/"),_c('code',[_vm._v("left")]),_vm._v("），"),_c('code',[_vm._v("align")]),_vm._v(" 表示对齐方式（"),_c('code',[_vm._v("start")]),_vm._v("/"),_c('code',[_vm._v("end")]),_vm._v("）。其中 "),_c('code',[_vm._v("side")]),_vm._v(" 是必须的，"),_c('code',[_vm._v("align")]),_vm._v(" 不传表示居中。推荐尽量使用简化的配置。")]),_c('h2',{attrs:{"id":"样式"}},[_vm._v("样式")]),_c('p',[_vm._v("由于浮层根元素被手动放置到 "),_c('code',[_vm._v("<body>")]),_vm._v(" 元素之下了，要设置浮层内容的样式，就需要给浮层根元素指定 "),_c('code',[_vm._v("class")]),_vm._v("。所有浮层系组件都支持 "),_c('code',[_vm._v("overlay-class")]),_vm._v(" 属性，通过该属性为浮层根元素设置 "),_c('code',[_vm._v("class")]),_vm._v("：")]),_c('pre',[_c('code',{staticClass:"hljs language-vue"},[_c('span',{staticClass:"hljs-tag"},[_vm._v("<"),_c('span',{staticClass:"hljs-name"},[_vm._v("template")]),_vm._v(">")]),_c('span',{staticClass:"html"},[_vm._v("\n  "),_c('span',{staticClass:"hljs-tag"},[_vm._v("<"),_c('span',{staticClass:"hljs-name"},[_vm._v("veui-dialog")]),_vm._v(" "),_c('span',{staticClass:"hljs-attr"},[_vm._v("overlay-class")]),_vm._v("="),_c('span',{staticClass:"hljs-string"},[_vm._v("\"my-dialog-overlay\"")]),_vm._v("/>")]),_vm._v("\n"),_c('span',{staticClass:"hljs-tag"},[_vm._v("<"),_c('span',{staticClass:"hljs-name"},[_vm._v("template")]),_vm._v(">")]),_vm._v("\n\n"),_c('span',{staticClass:"hljs-tag"},[_vm._v("<"),_c('span',{staticClass:"hljs-name"},[_vm._v("style")]),_vm._v(">")]),_c('span',{staticClass:"css"},[_vm._v("\n"),_c('span',{staticClass:"hljs-selector-class"},[_vm._v(".my-dialg-overlay")]),_vm._v(" {\n  "),_c('span',{staticClass:"hljs-comment"},[_vm._v("/* 自定义浮层样式 */")]),_vm._v("\n}\n")]),_c('span',{staticClass:"hljs-tag"},[_vm._v("</"),_c('span',{staticClass:"hljs-name"},[_vm._v("style")]),_vm._v(">")])])])])])}]
+
+
+// CONCATENATED MODULE: ./pages/advanced/overlay.vue?vue&type=template&id=2862205c&scoped=true&
+
+// EXTERNAL MODULE: ./common/i18n.js
+var i18n = __webpack_require__(59);
+
+// CONCATENATED MODULE: ./node_modules/@nuxt/webpack/node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/veui-loader/lib??ref--14!./pages/advanced/overlay.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var overlayvue_type_script_lang_js_ = ({
+  mixins: [i18n["b" /* htmlAttrs */]]
+});
+// CONCATENATED MODULE: ./pages/advanced/overlay.vue?vue&type=script&lang=js&
+ /* harmony default export */ var advanced_overlayvue_type_script_lang_js_ = (overlayvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./assets/styles/post.styl?vue&type=style&index=0&id=2862205c&lang=stylus&scoped=true&
+var postvue_type_style_index_0_id_2862205c_lang_stylus_scoped_true_ = __webpack_require__(944);
+
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(2);
+
+// CONCATENATED MODULE: ./pages/advanced/overlay.vue
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  advanced_overlayvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  "2862205c",
+  null
+  
+)
+
+/* harmony default export */ var overlay = __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ 473:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(945);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(10).default
+var update = add("1145cb66", content, true, {"sourceMap":false});
+
+/***/ }),
+
+/***/ 944:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_10_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_stylus_loader_index_js_ref_10_oneOf_1_3_post_styl_vue_type_style_index_0_id_2862205c_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(473);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_10_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_stylus_loader_index_js_ref_10_oneOf_1_3_post_styl_vue_type_style_index_0_id_2862205c_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_10_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_stylus_loader_index_js_ref_10_oneOf_1_3_post_styl_vue_type_style_index_0_id_2862205c_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_vue_style_loader_index_js_ref_10_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_10_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_10_oneOf_1_2_node_modules_stylus_loader_index_js_ref_10_oneOf_1_3_post_styl_vue_type_style_index_0_id_2862205c_lang_stylus_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ 945:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(9)(false);
+// Module
+exports.push([module.i, ".hljs[data-v-2862205c]{display:block;overflow-x:auto;padding:.5em;color:#abb2bf;background:#282c34}.hljs-comment[data-v-2862205c],.hljs-quote[data-v-2862205c]{color:#5c6370;font-style:italic}.hljs-doctag[data-v-2862205c],.hljs-formula[data-v-2862205c],.hljs-keyword[data-v-2862205c]{color:#c678dd}.hljs-deletion[data-v-2862205c],.hljs-name[data-v-2862205c],.hljs-section[data-v-2862205c],.hljs-selector-tag[data-v-2862205c],.hljs-subst[data-v-2862205c]{color:#e06c75}.hljs-literal[data-v-2862205c]{color:#56b6c2}.hljs-addition[data-v-2862205c],.hljs-attribute[data-v-2862205c],.hljs-meta-string[data-v-2862205c],.hljs-regexp[data-v-2862205c],.hljs-string[data-v-2862205c]{color:#98c379}.hljs-built_in[data-v-2862205c],.hljs-class .hljs-title[data-v-2862205c]{color:#e6c07b}.hljs-attr[data-v-2862205c],.hljs-number[data-v-2862205c],.hljs-selector-attr[data-v-2862205c],.hljs-selector-class[data-v-2862205c],.hljs-selector-pseudo[data-v-2862205c],.hljs-template-variable[data-v-2862205c],.hljs-type[data-v-2862205c],.hljs-variable[data-v-2862205c]{color:#d19a66}.hljs-bullet[data-v-2862205c],.hljs-link[data-v-2862205c],.hljs-meta[data-v-2862205c],.hljs-selector-id[data-v-2862205c],.hljs-symbol[data-v-2862205c],.hljs-title[data-v-2862205c]{color:#61aeee}.hljs-emphasis[data-v-2862205c]{font-style:italic}.hljs-strong[data-v-2862205c]{font-weight:700}.hljs-link[data-v-2862205c]{text-decoration:underline}.mermaid[data-v-2862205c]{font-family:Helvetica Neue,Arial,PingFang SC,Microsoft YaHei,sans-serif;font-size:13px}.mermaid .label[data-v-2862205c]{color:#333}.mermaid .node circle[data-v-2862205c],.mermaid .node ellipse[data-v-2862205c],.mermaid .node polygon[data-v-2862205c],.mermaid .node rect[data-v-2862205c]{fill:#eee;stroke:#999;stroke-width:1px}.mermaid .node.clickable[data-v-2862205c]{cursor:pointer}.mermaid .arrowheadPath[data-v-2862205c]{fill:#333}.mermaid .edgePath .path[data-v-2862205c]{stroke:#666;stroke-width:1.5px}.mermaid .edgeLabel[data-v-2862205c]{background-color:#fff}.mermaid .cluster rect[data-v-2862205c]{fill:#eaf2fb!important;stroke:#26a!important;stroke-width:1px!important}.mermaid .cluster text[data-v-2862205c]{fill:#333}.mermaid div.mermaidTooltip[data-v-2862205c]{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:Helvetica Neue,Arial,PingFang SC,Microsoft YaHei,sans-serif;font-size:12px;background:#eaf2fb;border:1px solid #26a;border-radius:2px;pointer-events:none;z-index:100}.post[data-v-2862205c]{padding:45px 60px;font-size:14px;line-height:1.8;color:#666;font-weight:400;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.post-layout .post[data-v-2862205c]{min-height:100%;margin-bottom:-192px}.post-layout .post[data-v-2862205c]:after{content:\"\";display:block;height:192px}.post-layout.no-links .post[data-v-2862205c]{margin-bottom:-58px}.no-links .post[data-v-2862205c]:after{height:58px}.post h1[data-v-2862205c]{margin-top:0;margin-bottom:1.25em;font-size:36px}.post h1 small[data-v-2862205c]{vertical-align:.1em;color:#999}.post h2[data-v-2862205c]{margin-top:1.3em;margin-bottom:1.2em;font-size:30px}.post h2[data-v-2862205c]:before{content:\"#\";margin-right:5px;color:#ccc}.post h2+h3[data-v-2862205c]{margin-top:2em}.post h3[data-v-2862205c]{margin-top:1.25em;margin-bottom:1.15em;font-size:24px}.post h4[data-v-2862205c]{margin-top:1.15em;margin-bottom:1.1em;font-size:18px}.post h5[data-v-2862205c]{margin-top:1.05em;margin-bottom:1.05em;font-size:14px}.post h6[data-v-2862205c]{margin-top:1em;margin-bottom:1em;font-size:12px}.post h1[data-v-2862205c],.post h2[data-v-2862205c],.post h3[data-v-2862205c]{font-weight:500;clear:both}.post h1[data-v-2862205c],.post h2[data-v-2862205c],.post h3[data-v-2862205c],.post h4[data-v-2862205c],.post h5[data-v-2862205c],.post h6[data-v-2862205c]{color:#333;line-height:1}.post br[data-v-2862205c]{clear:both}.post p[data-v-2862205c]{margin-top:.5em;margin-bottom:.5em}.post ol[data-v-2862205c],.post ul[data-v-2862205c]{padding-left:1.5em}.post blockquote[data-v-2862205c]{margin:1em 0;padding-left:1em;border-left:5px solid #f1f1f1;color:#999}.post table[data-v-2862205c]{width:100%;border-collapse:collapse;border-style:none solid;margin-top:1.5em;margin-bottom:1.5em}.post table[data-v-2862205c],.post td[data-v-2862205c],.post th[data-v-2862205c]{border-color:#f1f1f1;border-width:1px}.post td[data-v-2862205c],.post th[data-v-2862205c]{min-width:90px;padding:7px 14px;border-style:solid none;text-align:left}.post td[data-v-2862205c]>:first-child,.post th[data-v-2862205c]>:first-child{margin-top:5px}.post td[data-v-2862205c]>:last-child,.post th[data-v-2862205c]>:last-child{margin-bottom:5px}.post td pre[data-v-2862205c],.post th pre[data-v-2862205c]{padding:10px 15px}.post td table[data-v-2862205c],.post th table[data-v-2862205c]{margin-top:.2em;margin-bottom:.5em}.post td[data-v-2862205c]:first-child{white-space:nowrap}.post a[data-v-2862205c]:link:not([class^=veui-]),.post a[data-v-2862205c]:visited:not([class^=veui-]){text-decoration:none;color:#3998fc;transition:color .2s}.post a[data-v-2862205c]:link:not([class^=veui-]):hover,.post a[data-v-2862205c]:visited:not([class^=veui-]):hover{color:#3389e3}.post a[data-v-2862205c]:link:not([class^=veui-]):active,.post a[data-v-2862205c]:visited:not([class^=veui-]):active{color:#2e7aca}.post code[data-v-2862205c]{padding:2px 4px;background-color:rgba(0,0,0,.024);font-size:90%;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}.post hr[data-v-2862205c]{height:1px;margin:2em 0;padding:0;background-color:#eff0f1;border:0;clear:both}.post figure[data-v-2862205c]{float:right;width:60%;margin:0 0 30px 20px}.post figure+h1[data-v-2862205c],.post figure+h2[data-v-2862205c],.post figure+h3[data-v-2862205c],.post figure+h4[data-v-2862205c],.post figure+h5[data-v-2862205c],.post figure+h6[data-v-2862205c]{margin-top:0}.post figure img[data-v-2862205c]{display:block;margin:auto}.post figure .preview[data-v-2862205c]{padding:20px;overflow:hidden;border:1px solid #e5e5e5;transition:box-shadow .2s;cursor:pointer;text-align:center}.post figure .preview[data-v-2862205c]:hover{box-shadow:0 0 5px rgba(0,0,0,.2)}.post figure.hero[data-v-2862205c]{width:100%;float:none}.post figcaption[data-v-2862205c]{margin-top:10px;font-size:12px}.post figcaption p[data-v-2862205c]{margin:0;line-height:20px}.post figcaption .caption[data-v-2862205c]{font-weight:500}.post figcaption .desc[data-v-2862205c]{color:#999}.post .comparison[data-v-2862205c]{float:right;width:60%;margin:0 0 30px 20px}.post .comparison figure[data-v-2862205c]{width:calc(50% - 5px);margin:0}.post .comparison .good[data-v-2862205c]{float:left}.post .comparison .bad[data-v-2862205c]{float:right}.post .comparison .bad .caption[data-v-2862205c]{color:#ff5b5b}.post img[data-v-2862205c]{max-width:100%;max-height:100%}.post pre[data-v-2862205c]{border:1px solid #eee;padding:30px;background-color:#f9f9f9;white-space:pre;overflow:auto}.post pre code[data-v-2862205c]{background-color:transparent;padding:0}.post var[data-v-2862205c]{font-family:\"PT Serif\",Georgia,serif}.post kbd[data-v-2862205c]{display:inline-block;padding:3px 5px 6px;font-size:90%;line-height:10px;color:#444d56;vertical-align:1px;background-color:#fafbfc;border:1px solid #c6cbd1;border-bottom-color:#959da5;border-radius:3px;box-shadow:inset 0 -1px 0 #959da5}.post .custom-block[data-v-2862205c]{border:1px solid;margin:1em 0;padding:.75em 1em}.post .custom-block[data-v-2862205c]>:first-child{margin-top:0}.post .custom-block[data-v-2862205c]>:last-child{margin-bottom:0}.post .alert[data-v-2862205c],.post .tip[data-v-2862205c],.post .warning[data-v-2862205c]{font-size:13px}.post .alert[data-v-2862205c]{border-color:#fee;background-color:#fff6f6}.post .warning[data-v-2862205c]{border-color:#fef4e6;background-color:#fef9f2}.post .tip[data-v-2862205c]{border-color:#d8ebff;background-color:#ebf5ff}.post .badges[data-v-2862205c]{border:none;padding:0}.post .badges code[data-v-2862205c]{padding:2px 3px;background:#333;border-radius:2px;color:#fff;font-size:80%}.post .oss-badges[data-v-2862205c]{border:none;padding:0}.post .oss-badges a[data-v-2862205c]{margin-right:10px}.post .one-demo[data-v-2862205c]{margin:1em 0 1.25em}", ""]);
+
+
+
+/***/ })
+
+}]);
